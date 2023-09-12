@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-primary w-full fixed z-30">
+      <nav className="bg-primary w-full fixed z-20">
         <div className="flex justify-between">
           <Link href="/">
             <Image className="p-8" src={Logo} alt="dojo help desk logo" width={150} height={150} quality={100} />
@@ -50,16 +50,14 @@ export default function Navbar() {
       <div>
         <AnimatePresence>
           {isOpen ?
-            // <div className={`fixed left-0 w-screen h-screen bg-primary z-50 flex justify-center items-center transition-opacity duration-100 ease-in ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
             <motion.div
-              className="fixed left-0 w-screen h-screen bg-primary z-50 flex justify-center items-center"
+              className="fixed left-0 w-screen h-screen z-10 bg-primary flex justify-center items-center"
               initial="hidden"
               animate="visible"
               exit="hidden"
               transition={{ duration: 0.25 }}
               variants={sidebarVariants}
             >
-              {/* <div className={`fixed left-0 w-screen h-screen bg-primary z-50 flex justify-center items-center ${isOpen ? 'transition-opacity duration-1000 ease-in opacity-100' : 'transition-opacity duration-1000 ease-out opacity-0'}`}> */}
               <div className="block text-left">
                 <motion.p
                   initial="hidden"
@@ -103,18 +101,17 @@ export default function Navbar() {
                   </motion.div>
                 </motion.p>
               </div>
-              {/* </div> */}
             </motion.div>
             :
             <>
               <motion.div
-                className="fixed left-0 w-screen h-screen bg-primary z-50 flex justify-center items-center"
+                className="fixed left-0 w-screen h-screen bg-primary flex justify-center items-center"
                 initial="visible"
                 animate="hidden"
                 exit="hidden"
                 variants={sidebarVariants}
                 transition={{ duration: 0.25 }}
-                >
+              >
               </motion.div>
             </>
           }

@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <main>
       {/* pbp landing */}
-      <div className="h-screen bg-primary bg-cover bg-no-repeat lg:bg-[url('../public/images/homepage/WH-hdr-11.png')]">
+      <div className="h-screen bg-primary bg-cover bg-no-repeat xl:bg-[url('../public/images/homepage/WH-hdr-11.png')]">
         <div className="h-full p-10 flex items-center">
-          <div className="max-w-xl ml-24">
-            <Image src={pbp} alt='Powered By People' layout="responsive" width={800} height={400} />
+          <div className="max-w-3xl xl:ml-60 mx-auto">
+            <Image src={pbp} alt='Powered By People' width={800} height={400} />
             <div className='mt-10 border-t-4 border-custom'>
               <p className="block mt-10 font-semibold text-md">At our core, WeHire Group wants to make a difference in people&apos;s careers. We provide professionals with the tools to achieve their goals and connect clients with motivated individuals that impact their business.</p>
             </div>
