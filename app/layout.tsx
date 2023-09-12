@@ -6,7 +6,7 @@ const Poppins = PoppinsFont({ subsets: ['latin'], weight: '200' }); // Use a dif
 
 export const metadata = {
   title: 'WeHire Group',
-  description: 'WeHire Group',
+  description: 'Recruiting firm',
 }
 
 export default function RootLayout({

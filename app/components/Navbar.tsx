@@ -27,19 +27,19 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="bg-primary">
+      <nav className="bg-primary w-full fixed z-30">
         <div className="flex justify-between">
           <Link href="/">
-            <Image className="p-5" src={Logo} alt="dojo help desk logo" width={150} height={150} quality={100} />
+            <Image className="p-8" src={Logo} alt="dojo help desk logo" width={150} height={150} quality={100} />
           </Link>
-          <div className='p-5'>
+          <div className='p-8'>
             <button onClick={toggleNavbar}>
               <div className='rounded-full bg-secondary w-10 h-10 flex justify-center items-center'>
                 <div className='flex items-center justify-center'>
                   {isOpen ?
-                    <Hamburger color="#f0f0f0" size={28} toggled={isOpen} toggle={setIsOpen} />
+                    <Hamburger color="#f0f0f0" size={20} toggled={isOpen} toggle={setIsOpen} />
                     :
-                    <Hamburger color="#f0f0f0" size={28} toggled={isOpen} toggle={setIsOpen} />
+                    <Hamburger color="#f0f0f0" size={20} toggled={isOpen} toggle={setIsOpen} />
                   }
                 </div>
               </div>
