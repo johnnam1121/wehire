@@ -27,6 +27,9 @@ module.exports = {
         'secondary': '#162F55',
         'custom': '#128DF0'
       },
+      fontFamily: {
+        'cabin': ['Cabin', 'sans'],
+      },
     },
   },
   plugins: [],
