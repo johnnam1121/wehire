@@ -30,9 +30,9 @@ export default function Navbar() {
       <nav className="bg-primary w-full fixed z-20">
         <div className="flex justify-between">
           <Link href="/">
-            <Image className="p-8" src={Logo} alt="dojo help desk logo" width={150} height={150} quality={100} />
+            <Image className="px-5 py-3 mt-3" src={Logo} alt="dojo help desk logo" width={150} height={150} quality={100} />
           </Link>
-          <div className='p-8'>
+          <div className='px-5 py-3 mt-3'>
             <button onClick={toggleNavbar}>
               <div className='rounded-full bg-secondary w-10 h-10 flex justify-center items-center'>
                 <div className='flex items-center justify-center'>

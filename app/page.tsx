@@ -22,24 +22,20 @@ export default function Home() {
       </div>
 
       {/* job search and employer banners */}
-      <div className='grid md:grid-cols-2 bg-white'>
-        <div className='flex justify-center items-center my-3 -translate-y-14'>
-          <div className='bg-custom rounded-2xl w-10/12 md:w-11/12 lg:w-3/4'>
-            <h3 className='text-6xl font-bold text-white ml-6 mt-12 text-left pt-3'>Job Search</h3>
-            <button className='rounded-lg border-2 ml-6 mt-7 mb-12 text-white text-md p-3'>Find Opportunities</button>
-          </div>
+      <div className='flex justify-center flex-col md:flex-row'>
+        <div className='bg-custom rounded-lg -translate-y-10 md:w-1/2 md:mx-10 mx-3 my-3'>
+          <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Job Search</h3>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-custom'>Find Opportunities</button>
         </div>
-        <div className='flex justify-center items-center my-3 -translate-y-14'>
-          <div className='bg-secondary rounded-2xl w-10/12 md:w-11/12 lg:w-3/4'>
-            <h3 className='text-6xl font-bold text-white ml-6 mt-12 text-left pt-3'>Employer</h3>
-            <button className='rounded-lg border-2 ml-6 mt-7 mb-12 text-white text-md p-3'>Find Top Talent</button>
-          </div>
+        <div className='bg-secondary rounded-lg -translate-y-10 md:w-1/2 md:mx-10 mx-3 my-3'>
+          <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Employer</h3>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-secondary'><a href="www.google.com">Find Top Talent</a></button>
         </div>
       </div>
 
       {/* Our Process */}
       <div className="flex flex-col items-center justify-center">
-        <div className='mt-60 mb-20'>
+        <div className='mt-40 mb-20'>
           <div className="mx-10">
             <Image src={ourProcess} alt="Our Process photo" width={500} height={500} />
           </div>
@@ -87,15 +83,15 @@ export default function Home() {
       </div>
 
       {/* Specialties */}
-      <div className='mt-60'>
-        <div className='lg:w-1/2 mx-20' >
+      <div className='mt-40'>
+        <div className='md:w-1/2 mx-20' >
           <Image src={Specialties} alt="Our Process photo" layout='responsive' width={400} height={400} />
           <hr className="my-12 border-secondary border-2 dark:border-secondary" />
-          <p className='text-secondary font-semibold text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+          <p className=' text-secondary font-semibold text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
-        <p className='text-secondary font-semibold text-md'>consulting</p>
+        {/* <p className='text-secondary font-semibold text-md'>consulting</p>
         <p className='text-secondary font-semibold text-md'>big4</p>
-        <p className='text-secondary font-semibold text-md'>tax</p>
+        <p className='text-secondary font-semibold text-md'>tax</p> */}
       </div>
 
       {/* Referral Bonus */}
