@@ -4,7 +4,6 @@ import ourProcess from '../public/images/homepage/OurProcess.png';
 import Specialties from '../public/images/homepage/Specialties.png';
 import referral from '../public/images/homepage/referral.png';
 import phone from '../public/images/homepage/phone.png';
-import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -107,8 +106,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </main>
   )
 }

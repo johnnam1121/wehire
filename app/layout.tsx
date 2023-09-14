@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './globals.css';
 import { Poppins as PoppinsFont } from 'next/font/google'; // Rename the imported font
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={Poppins.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

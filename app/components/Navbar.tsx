@@ -65,7 +65,7 @@ export default function Navbar() {
                   variants={parentVariants}
                 >
                   <motion.div variants={childVariants}>
-                    <Link href='/'>
+                    <Link href='/specialties/big4' onClick={toggleNavbar}>
                       <p className="text-secondary text-5xl font-bold mt-3 hover:text-custom transition ease-in duration-300">
                         Big4
                       </p>
