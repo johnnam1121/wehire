@@ -51,7 +51,7 @@ export default function Navbar() {
         <AnimatePresence>
           {isOpen ?
             <motion.div
-              className="fixed left-0 w-screen h-screen z-10 bg-primary flex justify-center items-center"
+              className="fixed left-0 w-screen z-10 h-screen bg-primary flex justify-center items-center"
               initial="hidden"
               animate="visible"
               exit="hidden"
@@ -104,7 +104,7 @@ export default function Navbar() {
             </motion.div>
             :
             <>
-              <motion.div
+              {/* <motion.div
                 className="fixed left-0 w-screen h-screen bg-primary flex justify-center items-center"
                 initial="visible"
                 animate="hidden"
@@ -112,7 +112,7 @@ export default function Navbar() {
                 variants={sidebarVariants}
                 transition={{ duration: 0.25 }}
               >
-              </motion.div>
+              </motion.div> */}
             </>
           }
         </AnimatePresence>
