@@ -66,22 +66,22 @@ export default function Navbar() {
                 >
                   <motion.div variants={childVariants}>
                     <Link href='/specialties/big4' onClick={toggleNavbar}>
-                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-custom transition ease-in duration-300">
+                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-lightBlue transition ease-in duration-300">
                         Big4
                       </p>
                     </Link>
                   </motion.div>
-                  <motion.div variants={childVariants}>
-                    <Link href='/'>
-                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-custom transition ease-in duration-300">
+                  <motion.div variants={childVariants} onClick={toggleNavbar}>
+                    <Link href='/specialties/consulting'>
+                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-lightBlue transition ease-in duration-300">
                         Consulting
                       </p>
                     </Link>
                   </motion.div>
-                  <motion.div variants={childVariants}>
+                  <motion.div variants={childVariants} onClick={toggleNavbar}>
                     <Link href='/'>
-                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-custom transition ease-in duration-300">
-                        Blog Articles
+                      <p className="text-secondary text-5xl font-bold mt-3 hover:text-lightBlue transition ease-in duration-300">
+                        Future Content
                       </p>
                     </Link>
                   </motion.div>

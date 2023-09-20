@@ -13,7 +13,7 @@ export default function Home() {
         <div className="h-full p-10 flex items-center">
           <div className="max-w-3xl xl:ml-60 mx-auto">
             <Image src={pbp} alt='Powered By People' width={800} height={400} />
-            <div className='mt-10 border-t-4 border-custom'>
+            <div className='mt-10 border-t-4 border-lightBlue'>
               <p className="block mt-10 font-semibold text-md">At our core, WeHire Group wants to make a difference in people&apos;s careers. We provide professionals with the tools to achieve their goals and connect clients with motivated individuals that impact their business.</p>
             </div>
           </div>
@@ -22,13 +22,13 @@ export default function Home() {
 
       {/* job search and employer banners */}
       <div className='flex justify-center flex-col md:flex-row'>
-        <div className='bg-custom rounded-lg -translate-y-10 md:w-1/2 md:mx-10 mx-3 my-3'>
+        <div className='bg-lightBlue rounded-lg -translate-y-10 md:w-1/2 md:mx-10 mx-3 my-3'>
           <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Job Search</h3>
-          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-custom'>Find Opportunities</button>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-lightBlue'>Find Opportunities</button>
         </div>
         <div className='bg-secondary rounded-lg -translate-y-10 md:w-1/2 md:mx-10 mx-3 my-3'>
           <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Employer</h3>
-          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-secondary'><a href="www.google.com">Find Top Talent</a></button>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-secondary'><a href="/">Find Top Talent</a></button>
         </div>
       </div>
 

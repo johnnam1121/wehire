@@ -15,17 +15,20 @@ module.exports = {
       colors: {
         'primary': '#f0f0f0',
         'secondary': '#162F55',
-        'custom': '#128DF0'
+        'lightBlue': '#128DF0',
+        'lightGreen': '#00c3ba'
       },
       backgroundColor: {
         'primary': '#f0f0f0',
         'secondary': '#162F55',
-        'custom': '#128DF0'
+        'lightBlue': '#128DF0',
+        'lightGreen': '#00c3ba'
       },
       textColor: {
         'primary': '#f0f0f0',
         'secondary': '#162F55',
-        'custom': '#128DF0'
+        'lightBlue': '#128DF0',
+        'lightGreen': '#00c3ba'
       },
       fontFamily: {
         'cabin': ['Cabin', 'sans'],

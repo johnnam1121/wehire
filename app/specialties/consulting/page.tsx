@@ -3,16 +3,7 @@ import React from 'react'
 import consultingImage from '../../../public/images/Consulting/consultingImage.jpg'
 import WHConsulting from '../../../public/images/Consulting/WHConsulting.png'
 import OurServices from '../../../public/images/Consulting/OurServices.png'
-
-import WeHireBig4 from '../../../public/images/Big4/WehireBig4.png'
-import deloitte from '../../../public/images/Big4/deloitte.png'
-import kp from '../../../public/images/Big4/kp.png'
-import ey from '../../../public/images/Big4/ey.png'
-import pwc from '../../../public/images/Big4/pwc.png'
-import WhatIf from '../../../public/images/Big4/WhatIf.png'
-import education from '../../../public/images/Big4/education.png'
-import coaching from '../../../public/images/Big4/coaching.png'
-import placement from '../../../public/images/Big4/placement.png'
+import Dropdown from '@/app/specialties/consulting/Dropdown'
 import SpecializedSupport from '../../../public/images/Big4/SpecializedSupport.png'
 
 
@@ -68,48 +59,72 @@ export default function page() {
       {/* Our Services.. */}
       <div>
         <div className='flex justify-center '>
-          <div className='w-1/2'>
+          <div className='w-4/6'>
             <Image className='py-10 mt-10' src={OurServices} alt='OurServices logo' width={500} height={500} />
+            <Dropdown
+              title="HR On Call"
+              content={['An experienced consultant available just a phone call away for questions and solutions']}
+            />
+            <Dropdown
+              title="Interim HR Support"
+              content={['An experienced HR professional provided to you for on site support on an interim or longer term basis']}
+            />
+            <Dropdown
+              title="Risk and Compliance"
+              content={{
+                'Policy & Procedure creation and administration': ['Handbooks', 'Individual Policies'],
+                'Wage and Hour': ['FLSA (Fair Labor Standards Act)'],
+                'Benefits': ['FMLA (Family Medical Leave Act)', 'ACA (Affordable Healthcare Act) training and filing', 'HIPPA (Health Insurance Portability & Accountability Act)', 'ERISA (Employee Retirement Income Security Act)', 'COBRA (Consolidated Onmibus Budget Reconciliation Act) )'],
+                'Immigration': ['Hiring and onboarding non citizens)'],
+                'Workplace Safety': ['OSHA (Occupational Safety and Health Administration) ', 'Workers Compensation'],
+                'Workplace Discrimination Law': ['ADA (Americans with Disabilities Act) ', 'Covid-19 FFCRA (Families First Coronavirus Act)'],
+              }}
+            />
+            <Dropdown
+              title="Workforce Planning"
+              content={['Analysis', 'Forecasting', 'Organizational Design', 'Succession Planning']}
+            />
+            <Dropdown
+              title="Compensation"
+              content={["Assessments", "Salary Grading"]}
+            />
+            <Dropdown
+              title="Training and Development"
+              content={["Manager 101", "Leadership development", "Employee Trainings"]}
+            />
+            <Dropdown
+              title="Performance Management"
+              content={["Employee Relations", "Documentation", "Appraisals", "Terminations", "Reductions in force"]}
+            />
+            <Dropdown
+              title="HR Systems Selection & Implementation"
+              content={["HRIS (Human Resource Information Systems)", "ATS (Applicant Tracking Systems)", "ERP (Enterprise Resource Planning)", "LMS (Learning Management System)"]}
+            />
+            <Dropdown
+              title="Diversity & Inclusion"
+              content={["Education", "Affirmative action plans",]}
+            />
+            <Dropdown
+              title="Culture Initiatives"
+              content={["Rewards and Recognition in the workplace", "Core Values creation",]}
+            />
+            <Dropdown
+              title="Mergers and Aquisitions"
+              content={["Evaluations", "HR Due Diligence", "Announcement", "Transition"]}
+            />
           </div>
-        </div>
-        <div className='md:w-1/2 mx-auto py-20'>
-          <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-          </svg></button>
-          <div id="dropdown" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-              <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* calendly */}
-      <div className='flex justify-center pb-10 mb-10'>
-        <div className='bg-slate-700 w-1/2 h-48'>
-          <p className='text-white text-center align-center'>Calendly here</p>
         </div>
       </div>
 
       {/* schedule a call */}
 
       <div>
-        <div className="bg-custom flex flex-col md:flex-row md:justify-around py-24">
+        <div className="bg-lightGreen flex flex-col md:flex-row md:justify-around py-24 mt-36">
           <Image className="w-3/4 md:w-1/2 lg:w-1/4 mx-auto" src={SpecializedSupport} alt="SpecializedSupport logo" />
           <button className="mt-4 border-2 border-secondary md:py-4 md:px-8 md:w-1/4 font-bold w-1/2 mx-auto py-4"><a href="tel:(832) 455-8780">Schedule A Call</a></button>
         </div>
       </div>
+
     </main >
   )
 }
