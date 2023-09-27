@@ -11,6 +11,7 @@ import education from '../../../public/images/Big4/education.png'
 import coaching from '../../../public/images/Big4/coaching.png'
 import placement from '../../../public/images/Big4/placement.png'
 import SpecializedSupport from '../../../public/images/Big4/SpecializedSupport.png'
+// import Clock from './animatedSVG/Clock'
 
 
 export default function page() {
@@ -64,7 +65,8 @@ export default function page() {
           <div className='md:flex md:justify-around'>
             <div className="flex-none mx-auto p-2 md:w-1/3">
               <Image className='w-full' src={education} alt="Education logo" />
-              <p>clock image here</p>
+              {/* <Clock /> */}
+
             </div>
             <div className="flex-none mx-auto p-2 md:w-1/3">
               <Image className='w-full' src={coaching} alt="Coaching logo" />

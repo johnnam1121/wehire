@@ -119,7 +119,7 @@ export default function page() {
       {/* schedule a call */}
 
       <div>
-        <div className="bg-lightGreen flex flex-col md:flex-row md:justify-around py-24 mt-36">
+        <div className="bg-customTeal flex flex-col md:flex-row md:justify-around py-24 mt-36">
           <Image className="w-3/4 md:w-1/2 lg:w-1/4 mx-auto" src={SpecializedSupport} alt="SpecializedSupport logo" />
           <button className="mt-4 border-2 border-secondary md:py-4 md:px-8 md:w-1/4 font-bold w-1/2 mx-auto py-4"><a href="tel:(832) 455-8780">Schedule A Call</a></button>
         </div>

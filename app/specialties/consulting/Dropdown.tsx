@@ -44,7 +44,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, content }) => {
   return (
     <div>
       <div className="flex justify-between items-center px-1 cursor-pointer py-4" onClick={() => setIsOpen(!isOpen)}>
-        <h3 className="flex items-center text-2xl font-semibold hover:text-lightGreen transition ease-in duration-150" style={{ color: isOpen ? '#00c3ba' : '#777' }} >{title}</h3>
+        <h3 className="flex items-center text-2xl font-semibold hover:text-customTeal transition ease-in duration-150" style={{ color: isOpen ? '#00c3ba' : '#777' }} >{title}</h3>
         {isOpen ? <SlMinus color='#00c3ba' size={25} /> : <SlPlus color='#00c3ba' size={25} />}
       </div>
       <div className={contentClasses}>
