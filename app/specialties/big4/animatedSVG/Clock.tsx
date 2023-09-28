@@ -2,51 +2,56 @@
 import React, { useEffect, useRef } from 'react';
 
 export default function Clock() {
-  const pathRefs = {
-    path1: useRef<SVGPathElement>(null),
-    path2: useRef<SVGPathElement>(null),
-    path3: useRef<SVGPathElement>(null),
-    path4: useRef<SVGPathElement>(null),
-    path5: useRef<SVGPathElement>(null),
-    path6: useRef<SVGPathElement>(null),
-    path7: useRef<SVGPathElement>(null),
-    path8: useRef<SVGPathElement>(null),
-  };
+  const svgRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
-    const animatePath = (pathRef: React.MutableRefObject<SVGPathElement | null>) => {
-      const path = pathRef.current;
+    const animatePath = (path: SVGPathElement) => {
+      const totalLength = path.getTotalLength();
+      const totalLengthStr = totalLength.toString();
 
-      if (path) {
-        const totalLength = path.getTotalLength();
-        const totalLengthStr = totalLength.toString();
+      path.style.strokeDasharray = `${totalLengthStr} ${totalLengthStr}`;
+      path.style.strokeDashoffset = totalLengthStr;
 
-        // Set the initial values for the animation
-        path.style.strokeDasharray = `${totalLengthStr} ${totalLengthStr}`;
-        path.style.strokeDashoffset = totalLengthStr;
-
-        // Animate the path
-        path.animate(
-          [
-            { strokeDashoffset: totalLength },
-            { strokeDashoffset: 0 }
-          ],
-          {
-            duration: 1000,
-            easing: 'ease-out',
-            fill: 'forwards'
-          }
-        );
-      }
+      path.animate(
+        [
+          { strokeDashoffset: totalLength },
+          { strokeDashoffset: 0 }
+        ],
+        {
+          duration: 1000,
+          easing: 'ease-out',
+          fill: 'forwards'
+        }
+      );
     };
 
-    // Iterate through each path ref and animate the path
-    Object.values(pathRefs).forEach((pathRef) => animatePath(pathRef));
+    const handleIntersection: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && svgRef.current) {
+          // If the SVG is in view, animate each path
+          const paths = svgRef.current.querySelectorAll<SVGPathElement>('path');
+          paths.forEach((path) => animatePath(path));
+        }
+      });
+    };
 
-  }, [pathRefs]);
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5
+    });
+
+    if (svgRef.current) {
+      observer.observe(svgRef.current);
+    }
+
+    return () => {
+      // Disconnect the observer when component is unmounted
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <svg
+      ref={svgRef}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -61,7 +66,6 @@ export default function Clock() {
       style={{ height: '70px', width: '70px' }}
     >
       <path
-        ref={pathRefs.path1}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -69,7 +73,6 @@ export default function Clock() {
         d="M32,12L32,32L41,41"
       />
       <path
-        ref={pathRefs.path2}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -77,7 +80,6 @@ export default function Clock() {
         d="M4,32L8,32"
       />
       <path
-        ref={pathRefs.path3}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -85,7 +87,6 @@ export default function Clock() {
         d="M56,32L60,32"
       />
       <path
-        ref={pathRefs.path4}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -93,7 +94,6 @@ export default function Clock() {
         d="M32,60L32,56"
       />
       <path
-        ref={pathRefs.path5}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -101,7 +101,6 @@ export default function Clock() {
         d="M32,8L32,4"
       />
       <path
-        ref={pathRefs.path6}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -109,7 +108,6 @@ export default function Clock() {
         d="M32,63C14.879,63,1,49.121,1,32S14.879,1,32,1"
       />
       <path
-        ref={pathRefs.path7}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
@@ -117,7 +115,6 @@ export default function Clock() {
         d="M32,63c17.121,0,31-13.879,31-31 c0-6.713-2.134-12.926-5.759-18l-5.62-5.621"
       />
       <path
-        ref={pathRefs.path8}
         fill="none"
         stroke="#128DF0"
         strokeWidth="2"
