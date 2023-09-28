@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       {/* pbp landing */}
-      <div className="pt-20 bg-primary bg-cover bg-no-repeat xl:bg-[url('../public/images/Homepage/WH-hdr-11.png')]">
+      <div className="pt-20 bg-primary bg-cover bg-no-repeat xl:bg-[url('../public/images/Home/WH-hdr-11.png')]">
         <div className="h-full p-10 flex items-center mt-20">
           <div className='mx-auto lg:w-5/12 my-10 lg:ml-32'>
             <Image src='/images/Homepage/pbp-1024x429.png' alt='we hire big 4 logo' width={600} height={400} />
