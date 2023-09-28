@@ -4,15 +4,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
-import BG1 from '/images/Home/BG1.png'
-import BG2 from '/images/Home/BG2.png'
-import BG3 from '/images/Home/BG3.png'
-import BG4 from '/images/Home/BG4.png'
+import BG1 from '/images/StockPhotos/Homepage/BG1.png'
+import BG2 from '/images/StockPhotos/Homepage/BG2.png'
+import BG3 from '/images/StockPhotos/Homepage/BG3.png'
+import BG4 from '/images/StockPhotos/Homepage/BG4.png'
 
-import weHireConsulting from '/images/Home/weHireConsulting.png'
-import weHireBig4 from '/images/Home/weHireBig4.png'
-import weHireTax from '/images/Home/weHireTax.png'
-import comingSoon from '/images/Home/comingSoon.png'
+import weHireConsulting from '/images/StockPhotos/Homepage/weHireConsulting.png'
+import weHireBig4 from '/images/StockPhotos/Homepage/weHireBig4.png'
+import weHireTax from '/images/StockPhotos/Homepage/weHireTax.png'
+import comingSoon from '/images/StockPhotos/Homepage/comingSoon.png'
 
 export default function ImageSlide() {
   const settings = {
