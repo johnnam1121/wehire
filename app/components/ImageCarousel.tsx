@@ -3,15 +3,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
-import comingSoonBg from '../../public/images/Homepage/Specialties/comingSoonBg.png';
-import weHireBig4Bg from '../../public/images/Homepage/Specialties/weHireBig4Bg.png';
-import weHireConsultingBg from '../../public/images/Homepage/Specialties/weHireConsultingBg.png';
-import weHireTaxBg from '../../public/images/Homepage/Specialties/weHireTaxBg.png';
+import comingSoonBg from '../../public/images/HomePage/Specialties/Backgrounds/BG4.png';
+import weHireBig4Bg from '../../public/images/HomePage/Specialties/Backgrounds/BG2.png';
+import weHireConsultingBg from '../../public/images/HomePage/Specialties/Backgrounds/BG1.png';
+import weHireTaxBg from '../../public/images/HomePage/Specialties/Backgrounds/BG3.png';
 
-import comingSoon from '../../public/images/Homepage/Specialties/comingSoon.png';
-import weHireBig4 from '../../public/images/Homepage/Specialties/weHireBig4.png';
-import weHireConsulting from '../../public/images/Homepage/Specialties/weHireConsulting.png';
-import weHireTax from '../../public/images/Homepage/Specialties/weHireTax.png';
+import comingSoon from '../../public/images/HomePage/Specialties/comingSoon.png';
+import weHireBig4 from '../../public/images/HomePage/Specialties/weHireBig4.png';
+import weHireConsulting from '../../public/images/HomePage/Specialties/weHireConsulting.png';
+import weHireTax from '../../public/images/HomePage/Specialties/weHireTax.png';
 
 import Image from 'next/image';
 
