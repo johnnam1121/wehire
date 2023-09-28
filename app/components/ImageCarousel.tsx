@@ -5,14 +5,15 @@ import 'slick-carousel/slick/slick.css';
 
 import Image from 'next/image';
 
-import BG1 from '../../public/images/HomePage/Specialties/BG1.png'
-import BG2 from '../../public/images/HomePage/Specialties/BG2.png'
-import BG3 from '../../public/images/HomePage/Specialties/BG3.png'
-import BG4 from '../../public/images/HomePage/Specialties/BG4.png'
-import comingSoon from '../../public/images/HomePage/Specialties/comingSoon.png'
-import weHireBig4 from '../../public/images/HomePage/Specialties/weHireBig4.png'
-import weHireConsulting from '../../public/images/HomePage/Specialties/weHireConsulting.png'
-import weHireTax from '../../public/images/HomePage/Specialties/weHireTax.png'
+import comingSoon from '../../public/images/HomePage/comingSoon.png'
+import weHireBig4 from '../../public/images/HomePage/weHireBig4.png'
+import weHireConsulting from '../../public/images/HomePage/weHireConsulting.png'
+import weHireTax from '../../public/images/HomePage/weHireTax.png'
+
+import BG1 from '../../public/images/HomePage/BG1.png'
+import BG2 from '../../public/images/HomePage/BG2.png'
+import BG3 from '../../public/images/HomePage/BG3.png'
+import BG4 from '../../public/images/HomePage/BG4.png'
 
 export default function SimpleSlider() {
   const settings = {
