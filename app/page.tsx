@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center">
         <div className='mt-40 mb-20'>
           <div className="mx-10">
-            <img src='pbp-1024x429.png' alt="Our Process photo" width={500} height={500} />
+            <img src='/images/Home/OurProcess.png' alt="Our Process photo" width={500} height={500} />
           </div>
         </div>
 
