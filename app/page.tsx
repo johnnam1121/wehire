@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import ImageSlide from './components/HomePage/ImageSlide';
 
+import pbp from '/images/Home/pbp-1024x429.png'
+import ourProcess from '/images/Home/OurProcess.png'
+import specialties from '/images/Home/Specialties.png'
+import phone from '/images/Home/phone.png'
+import referral from '/images/Home/referral.png'
+
 export default function Home() {
   return (
     <main>
@@ -8,7 +14,7 @@ export default function Home() {
       <div className="pt-20 bg-primary bg-cover bg-no-repeat xl:bg-[url('../public/images/Home/WH-hdr-11.png')]">
         <div className="h-full p-10 flex items-center mt-20">
           <div className='mx-auto lg:w-5/12 my-10 lg:ml-32'>
-            <Image src='/images/Homepage/pbp-1024x429.png' alt='we hire big 4 logo' width={600} height={400} />
+            <Image src={pbp} alt='we hire big 4 logo' width={600} height={400} />
             <hr className='mt-10 border-t-4 border-lightBlue' />
             <p className="text-secondary block mt-10 font-semibold text-lg">At our core, WeHire Group wants to make a difference in
               people&apos;s careers. We provide professionals with the tools to achieve their goals and connect clients with motivated
@@ -33,7 +39,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center">
         <div className='mt-40 mb-20'>
           <div className="mx-10">
-            <Image src='/images/Homepage/OurProcess.png' alt="Our Process photo" width={500} height={500} />
+            <Image src={ourProcess} alt="Our Process photo" width={500} height={500} />
           </div>
         </div>
 
@@ -81,7 +87,7 @@ export default function Home() {
       {/* Specialties */}
       <div className='mt-40'>
         <div className='md:w-1/2 mx-20' >
-          <Image src='/images/Homepage/Specialties.png' alt="Our Process photo" layout='responsive' width={400} height={400} />
+          <Image src={specialties} alt="Our Process photo" layout='responsive' width={400} height={400} />
           <hr className="my-12 border-secondary border-2 dark:border-secondary" />
           <p className=' text-secondary font-semibold text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
@@ -94,10 +100,10 @@ export default function Home() {
       <div className='mt-40 mb-20'>
         <div className='block lg:flex justify-center items-center'>
           <div>
-            <Image src='/images/Homepage/phone.png' alt="Our Process photo" width={500} height={500} />
+            <Image src={phone} alt="Our Process photo" width={500} height={500} />
           </div>
           <div className='mx-8 mt-3 lg:w-1/2'>
-            <Image src='/images/Homepage/referral.png' alt="Our Process photo" layout='responsive' width={600} height={600} />
+            <Image src={referral} alt="Our Process photo" layout='responsive' width={600} height={600} />
             <p className='text-secondary font-semibold text-sm mt-10'>It&apos;s all in our name &ndash; We work with our network to Hire the most qualified candidates for our clients. That&apos;s why we offer a minimum industry-leading $1,000 referral bonus to anyone who helps fill our job openings for clients and up to $5,000 for our top positions.</p>
             <button className='mt-5 border-2 rounded-md border-secondary text-sm text-secondary font-bold px-3 py-2'>Refer A Friend</button>
           </div>

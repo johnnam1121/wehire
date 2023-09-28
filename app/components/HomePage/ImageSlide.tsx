@@ -1,7 +1,18 @@
 'use client'
+import Image from 'next/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+
+import BG1 from '/images/Home/BG1.png'
+import BG2 from '/images/Home/BG2.png'
+import BG3 from '/images/Home/BG3.png'
+import BG4 from '/images/Home/BG4.png'
+
+import weHireConsulting from '/images/Home/weHireConsulting.png'
+import weHireBig4 from '/images/Home/weHireBig4.png'
+import weHireTax from '/images/Home/weHireTax.png'
+import comingSoon from '/images/Home/comingSoon.png'
 
 export default function ImageSlide() {
   const settings = {
@@ -45,10 +56,10 @@ export default function ImageSlide() {
           <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
             <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
-              <img src='/images/Home/BG1.png' alt='We Hire Consulting Image' className="w-full h-auto" />
+              <Image src={BG1} alt='We Hire Consulting Image' className="w-full h-auto" />
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-customTeal opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
             </div>
-            <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/weHireConsulting.png' alt="Consulting Small Image" />
+            <Image className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src={weHireConsulting} alt="Consulting Small Image" />
             <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
               <p className="hover:text-primary-600 text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
             </div>
@@ -60,10 +71,10 @@ export default function ImageSlide() {
           <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
             <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
-              <img src='/images/Home/BG2.png' alt='We Hire Big 4 Image' className="w-full h-auto" />
+              <Image src={BG2} alt='We Hire Big 4 Image' className="w-full h-auto" />
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-lightBlue opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
             </div>
-            <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/weHireBig4.png' alt="Big 4 Small Image" />
+            <Image className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src={weHireBig4} alt="Big 4 Small Image" />
             <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
               <p className="hover:text-primary-600 text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
             </div>
@@ -75,10 +86,10 @@ export default function ImageSlide() {
           <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
             <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
-              <img src='/images/Home/BG3.png' alt='We Hire Tax Image' className="w-full h-auto" />
+              <Image src={BG3} alt='We Hire Tax Image' className="w-full h-auto" />
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-green-500 opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
             </div>
-            <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/weHireTax.png' alt="Tax Small Image" />
+            <Image className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src={weHireTax} alt="Tax Small Image" />
             <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
               <p className="hover:text-primary-600 text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
             </div>
@@ -90,10 +101,10 @@ export default function ImageSlide() {
           <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
             <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
-              <img src='/images/Home/BG4.png' alt='We Hire Coming Soon Image' className="w-full h-auto" />
+              <Image src={BG4} alt='We Hire Coming Soon Image' className="w-full h-auto" />
               <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-secondary opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
             </div>
-            <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/comingSoon.png' alt="Coming Soon Small Image" />
+            <Image className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src={comingSoon} alt="Coming Soon Small Image" />
             <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
               <p className="hover:text-primary-600 text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
             </div>
