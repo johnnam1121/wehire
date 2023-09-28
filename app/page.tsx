@@ -4,7 +4,7 @@ import ourProcess from '../public/images/Homepage/OurProcess.png';
 import Specialties from '../public/images/Homepage/Specialties.png';
 import referral from '../public/images/Homepage/referral.png';
 import phone from '../public/images/Homepage/phone.png';
-import ImageCarousel from './components/ImageCarousel';
+import ImageSlide from './components/HomePage/ImageSlide';
 
 export default function Home() {
   return (
@@ -91,7 +91,7 @@ export default function Home() {
           <p className=' text-secondary font-semibold text-md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
         <div>
-          <ImageCarousel />
+          <ImageSlide />
         </div>
       </div>
 
