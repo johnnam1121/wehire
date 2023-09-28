@@ -12,6 +12,8 @@ import coaching from '../../../public/images/Big4/coaching.png'
 import placement from '../../../public/images/Big4/placement.png'
 import SpecializedSupport from '../../../public/images/Big4/SpecializedSupport.png'
 import Clock from './animatedSVG/Clock'
+import Compass from './animatedSVG/Compass'
+import Arrow from './animatedSVG/Arrow'
 
 
 export default function page() {
@@ -64,17 +66,28 @@ export default function page() {
         <div className='md:w-1/2 mx-auto py-20'>
           <div className='md:flex md:justify-around'>
             <div className="flex-none mx-auto p-2 md:w-1/3">
-              <Image className='w-full' src={education} alt="Education logo" />
-              <Clock />
-
+              <div className='flex justify-center mb-8'>
+                <Image className='w-1/2 lg:w-full' src={education} alt="Education logo" />
+              </div>
+              <div className='flex justify-center mb-10'>
+                <Clock />
+              </div>
             </div>
             <div className="flex-none mx-auto p-2 md:w-1/3">
-              <Image className='w-full' src={coaching} alt="Coaching logo" />
-              <p>clock image here</p>
+              <div className='flex justify-center mb-8'>
+                <Image className='w-1/2 lg:w-full' src={coaching} alt="Coaching logo" />
+              </div>
+              <div className='flex justify-center mb-10'>
+                <Compass />
+              </div>
             </div>
             <div className="flex-none mx-auto p-2 md:w-1/3">
-              <Image className='w-full' src={placement} alt="Placement logo" />
-              <p>clock image here</p>
+              <div className='flex justify-center mb-8'>
+                <Image className='w-1/2 lg:w-full' src={placement} alt="Placement logo" />
+              </div>
+              <div className='flex justify-center mb-10'>
+                <Arrow />
+              </div>
             </div>
           </div>
         </div>
