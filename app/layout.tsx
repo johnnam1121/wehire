@@ -1,5 +1,5 @@
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import './globals.css';
 import { Poppins as PoppinsFont } from 'next/font/google'; // Rename the imported font
 
