@@ -23,7 +23,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-around pb-10">
+        <div className="hidden md:flex flex-wrap justify-around pb-10 ">
           <div className="flex-none w-52 p-2">
             <p className='text-white text-2xl font-black' >Discovery</p>
             <p className='text-white text-md font-medium'>By conducting initial HR Business assessments,
@@ -53,6 +53,18 @@ export default function page() {
               going forward and provide training to ease the transition.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* job search and employer banners */}
+      <div className='flex justify-center flex-col md:flex-row'>
+        <div className='bg-customTeal rounded-lg md:w-1/2 md:mx-10 mx-3 my-3'>
+          <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Job Searching?</h3>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-lightBlue'>Find Opportunities</button>
+        </div>
+        <div className='bg-customTeal rounded-lg md:w-1/2 md:mx-10 mx-3 my-3'>
+          <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Employer?</h3>
+          <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-secondary'><a href="/">Find Top Talent</a></button>
         </div>
       </div>
 

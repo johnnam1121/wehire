@@ -74,19 +74,21 @@ export default function ImageSlide() {
           </div>
         </a>
         {/* lightGreen - weHireTax */}
-        <div className="flex justify-center items-center px-2">
-          <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-            <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
-              <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
-              <img src='/images/Home/BG3.png' alt='We Hire Tax Image' className="w-full h-auto" />
-              <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-green-500 opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
-            </div>
-            <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/weHireTax.png' alt="Tax Small Image" />
-            <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
-              <p className="hover:text-primary-600 text-sm md:text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
+        <a href="/specialties/big4">
+          <div className="flex justify-center items-center px-2">
+            <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
+              <div className="lightbox relative transition-all duration-500 group-hover:scale-105 tobii-zoom">
+                <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-0 transition-opacity	transition-duration: 150ms"></div>
+                <img src='/images/Home/BG3.png' alt='We Hire Tax Image' className="w-full h-auto" />
+                <div className="gradient-overlay absolute inset-0 bg-gradient-to-b from-transparent to-green-500 opacity-0 group-hover:opacity-100 transition-opacity	transition-duration: 150ms"></div>
+              </div>
+              <img className='w-1/2 md:w-3/4 lg:w-1/2 ml-8 absolute bottom-8 group-hover:bottom-32 right-2 left-2 transition-all duration-500' src='/images/Home/weHireTax.png' alt="Tax Small Image" />
+              <div className="w-1/2 md:w-3/4 lg:w-1/2 ml-10 mb-8 absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500">
+                <p className="hover:text-primary-600 text-sm md:text-lg text-white transition duration-500 font-semibold">Specialized HR solutions for interim or long-term needs.</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* secondary - coming soon */}
         <div className="flex justify-center items-center px-2">
