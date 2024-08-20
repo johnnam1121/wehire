@@ -57,7 +57,7 @@ export default function page() {
       </div>
 
       {/* job search and employer banners */}
-      <div className='flex justify-center flex-col md:flex-row'>
+      {/* <div className='flex justify-center flex-col md:flex-row'>
         <div className='bg-customTeal rounded-lg md:w-1/2 md:mx-10 mx-3 my-3'>
           <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Job Searching?</h3>
           <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-lightBlue'>Find Opportunities</button>
@@ -66,7 +66,7 @@ export default function page() {
           <h3 className='text-white text-5xl md:text-6xl font-bold md:ml-8 p-3 mt-6'>Employer?</h3>
           <button className='text-white text-md font-semibold border-2 rounded-lg md:ml-11 p-3 m-3 mb-6 transition ease-in hover:bg-white hover:text-secondary'><a href="/">Find Top Talent</a></button>
         </div>
-      </div>
+      </div> */}
 
       {/* Our Services.. */}
       <div>

@@ -11,16 +11,55 @@ export default function Home() {
   return (
     <main>
       {/* pbp landing */}
-      <div className="pt-20 bg-primary bg-cover bg-no-repeat xl:bg-[url('../public/images/Home/WH-hdr-11.png')]">
+      <div className="pt-20 bg-primary bg-cover bg-no-repeat lg:bg-[url('../public/images/Home/WH-hdr-11.png')]">
         <div className="h-full p-10 flex items-center mt-20">
           <div className='mx-auto lg:w-5/12 my-10 lg:ml-32'>
             <img src='/images/Home/pbp-1024x429.png' alt='we hire big 4 logo' width={600} height={400} />
             <hr className='mt-10 border-t-4 border-lightBlue' />
-            <p className="text-secondary block mt-10 font-semibold text-lg">At our core, WeHire Group wants to make a difference in
+            {/* <p className="text-secondary block mt-10 font-semibold text-lg">At our core, WeHire Group wants to make a difference in
               people&apos;s careers. We provide professionals with the tools to achieve their goals and connect clients with motivated
-              individuals that impact their business.</p>
+              individuals that impact their business.</p> */}
+            <p className="text-secondary block mt-10 font-semibold text-lg">At WeHire Group, we specialize in delivering custom search solutions tailored to meet your
+              unique staffing needs. With a commitment to excellence, we provide first-class service and
+              connect you with qualified candidates swiftly and efficiently.</p>
           </div>
         </div>
+      </div>
+
+      <div className=''>
+        <div className='text-cetner'>
+          <h1 className='font-bold text-lg'>Why Choose WeHire Group?</h1>
+          <ul className='list-disc pl-5'>
+            <li>Customized Search Solutions: We understand that every client is unique. That&#39;s why we
+              offer personalized search strategies designed to find candidates who align perfectly with
+              your requirements and company culture.</li>
+            <li>Quality Service: Our dedicated team is committed to delivering exceptional service at
+              every step of the hiring process. We prioritize your satisfaction and strive to exceed your
+              expectations.</li>
+            <li>Rapid Placement: Time is valuable. We streamline the hiring process to ensure you
+              receive qualified candidates promptly, minimizing downtime and maximizing
+              productivity.</li>
+          </ul>
+        </div>
+        <div className='text-cetner'>
+          <h1 className='font-bold text-lg'>Our Servies</h1>
+          <ul className='list-disc pl-5'>
+            <li> Identify and recruit top-tier executives and senior leaders who drive
+              your organization&#39;s success.</li>
+            <li>Specialized Recruitment: From technical specialists to managerial roles, we find
+              talented individuals across various industries and disciplines.</li>
+            <li>Customized Solutions: Whether you need permanent placements or temporary staffing
+              solutions, we adapt our services to meet your evolving business needs.</li>
+          </ul>
+        </div>
+        <p>
+          Client Success Stories
+          Discover how WeHire Group has empowered businesses like yours to thrive through strategic
+          staffing solutions. Read our success stories and learn how we can elevate your team.
+          Contact Us
+          Ready to elevate your hiring process? Contact WeHire Group today to discuss your staffing
+          requirements. Let us partner with you to build a stronger, more capable team.
+        </p>
       </div>
 
       {/* Specialties */}
