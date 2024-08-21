@@ -7,33 +7,6 @@ import { useRef, useState } from 'react';
 export default function Contact() {
   const form = useRef();
   const [state, handleSubmit] = useForm("xyzgdnpj");
-  if (state.succeeded) {
-    return (
-      <div className="md:h-screen w-full dark:bg-gray-100 flex">
-        <div className="lg:w-[60%] sm:w-[80%] xs:w-[90%] mx-auto flex gap-8 items-center justify-center">
-          <div className="flex flex-col gap-4 text-black dark:text-black p-4 rounded-lg border border-secondary shadow-xl shadow-slate-900/30">
-            <h5 className="text-sm text-black font-semibold">Korean American Society of Houston</h5>
-            <div className="w-full flex gap-2 items-center justify-around">
-              <div className="text-5xl font-semibold uppercase font-serif">Thank You</div>
-              <hr className="w-[50%] h-1 rounded-full border-t-kashBlue-600 bg-kashBlue-600" />
-            </div>
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget justo sit amet massa hendrerit bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin.
-            </p>
-            <div className="flex gap-4 justify-center">
-              <a href="/" className="w-full px-4 py-1 border-2 border-kashBlue-600 rounded-sm text-center flex items-center justify-center duration-200 hover:bg-kashBlack-100 hover:text-primary">
-                Return to homepage
-              </a>
-              <a href="https://app.joinit.com/o/kash" target="blank" className="w-full text-primary px-4 py-1 bg-kashBlue-600 rounded-sm text-center flex items-center justify-center duration-200 hover:bg-kashBlack-100">
-                Become a Member
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,6 +14,33 @@ export default function Contact() {
       setSelectedFiles(Array.from(event.target.files));
     }
   };
+
+  if (state.succeeded) {
+    return (
+      <div className="w-full py-10 dark:bg-gray-100 flex">
+        <div className="lg:w-[60%] sm:w-[80%] xs:w-[90%] mx-auto flex gap-8 items-center justify-center">
+          <div className="flex flex-col gap-4 text-black dark:text-black px-4 py-10 rounded-lg border border-secondary shadow-xl shadow-slate-900/30">
+            <h5 className="text-sm text-black font-semibold">WeHire Group</h5>
+            <div className="w-full flex gap-2 items-center justify-around">
+              <div className="text-5xl font-semibold uppercase font-serif">Thank You</div>
+              <hr className="w-[50%] h-1 rounded-full border-t-kashBlue-600 bg-kashBlue-600" />
+            </div>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget justo sit amet massa hendrerit bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin.
+            </p>
+            {/* <div className="flex gap-4 justify-center">
+            <a href="/" className="w-full px-4 py-1 border-2 border-kashBlue-600 rounded-sm text-center flex items-center justify-center duration-200 hover:bg-kashBlack-100 hover:text-primary">
+              Return to homepage
+            </a>
+            <a href="https://app.joinit.com/o/kash" target="blank" className="w-full text-primary px-4 py-1 bg-kashBlue-600 rounded-sm text-center flex items-center justify-center duration-200 hover:bg-kashBlack-100">
+              Become a Member
+            </a>
+          </div> */}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex items-center">
