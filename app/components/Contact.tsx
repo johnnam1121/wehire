@@ -2,12 +2,14 @@
 import { useForm, ValidationError } from '@formspree/react';
 import { useRef, useState } from 'react';
 
-// https://formspree.io/f/xyzgdnpj
-
 export default function Contact() {
   const form = useRef();
   const formRef = useRef<HTMLFormElement>(null);
-  const [state, handleSubmit] = useForm("xyzgdnpj");
+  const formKey = process.env.NEXT_PUBLIC_FORM_KEY;
+  if (!formKey) {
+    throw new Error('NEXT_PUBLIC_FORM_KEY is not defined');
+  }
+  const [state, handleSubmit] = useForm(formKey);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
