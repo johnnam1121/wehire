@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ImageSlide from './components/HomePage/ImageSlide';
+import Contact from './components/Contact';
 
 // import pbp from '/images/Home/pbp-1024x429.png'
 // import ourProcess from 'c'
@@ -26,44 +27,65 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=''>
-        <div className='text-cetner'>
-          <h1 className='font-bold text-lg'>Why Choose WeHire Group?</h1>
-          <ul className='list-disc pl-5'>
-            <li>Customized Search Solutions: We understand that every client is unique. That&#39;s why we
-              offer personalized search strategies designed to find candidates who align perfectly with
-              your requirements and company culture.</li>
-            <li>Quality Service: Our dedicated team is committed to delivering exceptional service at
-              every step of the hiring process. We prioritize your satisfaction and strive to exceed your
-              expectations.</li>
-            <li>Rapid Placement: Time is valuable. We streamline the hiring process to ensure you
-              receive qualified candidates promptly, minimizing downtime and maximizing
-              productivity.</li>
-          </ul>
+      {/* our services */}
+      <div className='py-16 px-16 text-center sm:text-left'>
+        <h1 className='font-bold text-5xl text-secondary md:pt-20'>Our Services</h1>
+        <div className='sm:flex md:pb-20'>
+          <div className='mt-10 text-center sm:text-left w-full sm:pr-20'>
+            <h3 className='font-semibold text-2xl mb-2 text-secondary'>Top Talent Acquisition</h3>
+            <p className='text-lg'>
+              Identify and recruit top-tier executives and senior leaders who drive
+              your organization&#39;s success.
+            </p>
+          </div>
+          <div className='mt-10 text-center sm:text-left w-full sm:pr-20'>
+            <h3 className='font-semibold text-2xl mb-2 text-secondary'>Specialized Recruitment</h3>
+            <p className='text-lg'>
+              From technical specialists to managerial roles, we find
+              talented individuals across various industries and disciplines.
+            </p>
+          </div>
+          <div className='mt-10 text-center sm:text-left w-full sm:pr-20'>
+            <h3 className='font-semibold text-2xl mb-2 text-secondary'>Customized Solutions</h3>
+            <p className='text-lg'>
+              Whether you need permanent placements or temporary staffing
+              solutions, we adapt our services to meet your evolving business needs.
+            </p>
+          </div>
         </div>
-        <div className='text-cetner'>
-          <h1 className='font-bold text-lg'>Our Servies</h1>
-          <ul className='list-disc pl-5'>
-            <li> Identify and recruit top-tier executives and senior leaders who drive
-              your organization&#39;s success.</li>
-            <li>Specialized Recruitment: From technical specialists to managerial roles, we find
-              talented individuals across various industries and disciplines.</li>
-            <li>Customized Solutions: Whether you need permanent placements or temporary staffing
-              solutions, we adapt our services to meet your evolving business needs.</li>
-          </ul>
-        </div>
-        <p>
-          Client Success Stories
-          Discover how WeHire Group has empowered businesses like yours to thrive through strategic
-          staffing solutions. Read our success stories and learn how we can elevate your team.
-          Contact Us
-          Ready to elevate your hiring process? Contact WeHire Group today to discuss your staffing
-          requirements. Let us partner with you to build a stronger, more capable team.
-        </p>
       </div>
 
+      {/* why choose wehire */}
+      <div className='py-20 px-16 bg-primary mb-20'>
+        <div className='mt-8'>
+          <h1 className='mb-8 font-bold text-5xl text-secondary'>Why Choose WeHire Group?</h1>
+          <div className='pl-2 md:pr-20'>
+            <h2 className='mb-2 md:mb-2 font-semibold text-3xl text-secondary'>Customized Search Solutions:</h2>
+            <p className='mb-8 text-lg md:mb-8 font-normal'>We understand that every client is unique. That&#39;s why we
+              offer personalized search strategies designed to find candidates who align perfectly with
+              your requirements and company culture. </p>
+            <h2 className='mb-2 md:mb-2 font-semibold text-3xl text-secondary'>Quality Service:</h2>
+            <p className='mb-8 text-lg md:mb-8 font-normal'>Our dedicated team is committed to delivering exceptional service at
+              every step of the hiring process. We prioritize your satisfaction and strive to exceed your
+              expectations. </p>
+            <h2 className='mb-2 md:mb-2 font-semibold text-3xl text-secondary'>Rapid Placement:</h2>
+            <p className='mb-8 text-lg md:mb-8 font-normal'>Time is valuable. We streamline the hiring process to ensure you
+              receive qualified candidates promptly, minimizing downtime and maximizing
+              productivity </p>
+          </div>
+        </div>
+      </div>
+      {/* <p>
+        Client Success Stories
+        Discover how WeHire Group has empowered businesses like yours to thrive through strategic
+        staffing solutions. Read our success stories and learn how we can elevate your team.
+        Contact Us
+        Ready to elevate your hiring process? Contact WeHire Group today to discuss your staffing
+        requirements. Let us partner with you to build a stronger, more capable team.
+      </p> */}
+
       {/* Specialties */}
-      <div className='mt-20 mb-10'>
+      <div className='my-10'>
         <div className=' md:w-1/2 mx-10 md:mx-20' >
           {/* layout='responsive' */}
           <img src='/images/Home/Specialties.png' alt="Our Process photo" width={400} height={400} />
@@ -75,7 +97,11 @@ export default function Home() {
         </div>
       </div>
 
-
+      {/* Contact Form */}
+      <div className='bg-primary py-20' id='homePageContactForm'>
+        {/* <h1 className='mb-8 font-bold text-5xl text-secondary text-center'>Contact Us!</h1> */}
+        <Contact />
+      </div>
     </main>
   )
 }
