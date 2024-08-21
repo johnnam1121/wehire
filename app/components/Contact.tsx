@@ -6,6 +6,7 @@ import { useRef, useState } from 'react';
 
 export default function Contact() {
   const form = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [state, handleSubmit] = useForm("xyzgdnpj");
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
 
@@ -64,7 +65,7 @@ export default function Contact() {
               <span className="text-sm">some information?</span>
             </div>
           </div>
-          <form className="md:col-span-8 p-10" onSubmit={handleSubmit}>
+          <form ref={formRef} className="md:col-span-8 p-10" onSubmit={handleSubmit}>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-first-name">
@@ -136,7 +137,6 @@ export default function Contact() {
                 <label
                   className='py-2 px-2 sm:px-6 shadow bg-primary hover:bg-gray-400 duration-200 focus:shadow-outline focus:outline-none text-secondary font-bold rounded border border-secondary'
                   htmlFor='myfile'>Attach Files</label>
-
                 <button
                   className="py-2 px-2 sm:px-6 shadow bg-secondary hover:bg-gray-400 duration-200 focus:shadow-outline focus:outline-none text-primary font-bold rounded"
                   type="submit"
