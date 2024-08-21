@@ -1,6 +1,6 @@
 'use client'
 import { useForm, ValidationError } from '@formspree/react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 // https://formspree.io/f/xyzgdnpj
 
@@ -33,6 +33,14 @@ export default function Contact() {
       </div>
     );
   }
+
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files) {
+      setSelectedFiles(Array.from(event.target.files));
+    }
+  };
 
   return (
     <div className="flex items-center">
@@ -116,21 +124,37 @@ export default function Contact() {
                   errors={state.errors}
                 />
               </div>
-              <div className="flex justify-end w-full px-3">
-                {/* <div className="md:flex md:items-center">
-                  <label className="block text-gray-500 font-bold">
-                    <input name="newsletter" className="mr-4 sm:mr-2 leading-tight" type="checkbox" />
-                    <span className="text-sm">
-                      Sign me up placeholder-secondary your newsletter!
-                    </span>
-                  </label>
-                </div> */}
+              <div className="flex justify-between w-full px-3">
+                <input
+                  type="file"
+                  id="myfile"
+                  name="myfile"
+                  multiple
+                  className='hidden'
+                  onChange={handleFileChange}
+                />
+                <label
+                  className='py-2 px-2 sm:px-6 shadow bg-primary hover:bg-gray-400 duration-200 focus:shadow-outline focus:outline-none text-secondary font-bold rounded border border-secondary'
+                  htmlFor='myfile'>Attach Files</label>
+
                 <button
-                  className="shadow bg-secondary hover:bg-gray-400 duration-200 focus:shadow-outline focus:outline-none text-primary font-bold py-2 px-2 sm:px-6 rounded"
+                  className="py-2 px-2 sm:px-6 shadow bg-secondary hover:bg-gray-400 duration-200 focus:shadow-outline focus:outline-none text-primary font-bold rounded"
                   type="submit"
-                  disabled={state.submitting}>
+                  disabled={false}
+                >
                   Send Message
                 </button>
+              </div>
+              <div className="w-full px-3 mt-2">
+                {selectedFiles.length > 0 && (
+                  <ul className='text-sm'>
+                    {selectedFiles.map((file, index) => (
+                      <li key={index} className="text-gray-700">
+                        {file.name}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           </form>
