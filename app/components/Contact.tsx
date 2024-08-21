@@ -5,11 +5,7 @@ import { useRef, useState } from 'react';
 export default function Contact() {
   const form = useRef();
   const formRef = useRef<HTMLFormElement>(null);
-  const formKey = process.env.NEXT_PUBLIC_FORM_KEY;
-  if (!formKey) {
-    throw new Error('NEXT_PUBLIC_FORM_KEY is not defined');
-  }
-  const [state, handleSubmit] = useForm(formKey);
+  const [state, handleSubmit] = useForm('xyzgdnpj');
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
