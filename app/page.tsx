@@ -26,7 +26,7 @@ export default function Home() {
       <div className='flex justify-center text-center pt-40 sm:pt-80'>
         <a
           href="mailto:hello@wehiregroup.com"
-          className="inline-block border-2 rounded-xl border-primary bg-primary text-secondary font-medium px-4 py-2 transition hover:bg-secondary hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary duration-[500ms]"
+          className="inline-block border-2 rounded-xl border-primary bg-primary text-secondary font-semibold px-4 py-2 transition hover:bg-secondary hover:text-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary duration-[500ms]"
         >
           Contact Us
         </a>
